@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+<div *ngFor="let file of files">
+  <icon [data]=file (click)="OpenApp(file.type)">Icon unavaliable...</icon>
+</div>
+
+<div *ngFor="let note of notes">
+  <note [data]=note>Note unavaliable...</note>
+</div>
+<div *ngFor="let paint of paints">
+  <paint [data]=note>Paint unavaliable...</paint>
+</div>
