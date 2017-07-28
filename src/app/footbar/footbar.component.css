@@ -1,0 +1,25 @@
+.footbar {
+  padding: 0px;
+  width: 99%;
+  height:40px;
+  border: 3px outset #808080;
+  background-color: #c0c0c0;
+  position:absolute;
+  left:0;
+  bottom:-2px;
+}
+
+.clock{
+  padding:7px;
+  margin:1px;
+  float:right;
+  border: 2px inset #808080;
+}
+
+.start{
+  float:left;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/sVV5FY43ITVX6M5r61MBrnnQSdI=/cdn.vox-cdn.com/uploads/chorus_asset/file/6028879/win95s.0.gif");
+  background-size: cover;
+  width:100px;
+  height:100%;
+}

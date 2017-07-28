@@ -1,0 +1,4 @@
+light grey: #838C95
+dark grey: #4D525F
+bg green: #008080
+active window blue: #000080

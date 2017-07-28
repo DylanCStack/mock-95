@@ -1,3 +1,8 @@
-<p>
-  {{data.type}}
-</p>
+<div class="icon" [ngStyle]="getStyle()"
+  (dblclick)="OpenFile()"
+  (mousedown)="canMove(true, $event)"
+  (mouseup)="canMove(false, $event)"
+  (mousemove)="move($event)">
+  <div class="image"></div>
+  <p>{{data.filename}}</p>
+</div>

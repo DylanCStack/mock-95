@@ -1,0 +1,17 @@
+.menubar {
+  clear:both;
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px ridge #808080;
+}
+
+
+/*select {
+  display:none;
+}
+label:hover + select{
+  display:block;
+}
+select:hover{
+  display:block;
+}*/

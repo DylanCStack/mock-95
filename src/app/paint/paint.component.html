@@ -1,3 +1,14 @@
-<p>
-  paint works!
-</p>
+<div class="paint" [ngStyle]="getStyle()">
+  <div class="header"
+    (mousedown)="canMove(true, $event)"
+    (mouseup)="canMove(false, $event)"
+    (mousemove)="move($event)"
+  >
+    <h3>{{localdata.filename}}</h3>
+    <button (click)="closeApp()">X</button>
+    <button (click)="minimizeApp()"><sup>__</sup></button>
+  </div>
+  <menubar>Menubar unavaliable...</menubar>
+  <canvas id="canvas" height=700 width=700 (mousedown)="canDraw(true)" (mouseup)="canDraw(false)" (mousemove)="draw($event)"></canvas>
+  <input #newColor (load)="colorChange(newColor.value)" (change)="colorChange(newColor.value)" type="color" value="#000000">
+</div>

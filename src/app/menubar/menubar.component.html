@@ -1,0 +1,6 @@
+<div class="menubar">
+  <label for="file">File</label>
+  <select name="file" [(ngModel)]="selectedOption" (change)="FileMenu()">
+    <option *ngFor="let option of options">{{option}}</option>
+  </select>
+</div>

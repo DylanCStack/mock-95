@@ -1,0 +1,44 @@
+<div class="game" [ngStyle]="getStyle()" >
+  <div class="header"
+    (mousedown)="canMove(true, $event)"
+    (mouseup)="canMove(false, $event)"
+    (mousemove)="move($event)"
+  >
+    <h3>{{localdata.filename}}</h3>
+    <button (click)="closeApp()">X</button>
+    <button (click)="minimizeApp()"><sup>__</sup></button>
+  </div>
+  <p class="scores">{{score}}</p>
+  <p class="scores">{{finalScore}}</p>
+  <div id="options" *ngIf="!opponent">
+    <select #difficultyInput>
+      <option value="beginner">beginner</option>
+      <option value="intermediate">intermediate</option>
+      <option value="expert">expert</option>
+    </select>
+    <button (click)="createBoard(difficultyInput.value)">Play</button>
+  </div>
+  <div id="options" *ngIf="opponent">
+    <h3>Your target score is {{opponent.finalScore}} on {{opponent.difficulty}} difficulty, set by {{opponent.initials}}</h3>
+  </div>
+  <div id="game">
+    <table id="gameTable">
+      <tbody>
+        <tr *ngFor="let row of rows">
+          <td (click)="checkTile(col)" [class]="col.class" (contextmenu)="markTile($event, col)" *ngFor="let col of row"></td>
+        </tr>
+      <tbody>
+    </table>
+    <h3>Number of bombs: {{actualBombs}}</h3>
+    <div class="text">
+      <div [class]="end">
+          <h2>Sorry you lose, would you like to play again?</h2>
+          <button (click)="createBoard(difficultyInput.value)">Play again</button>
+      </div>
+      <div *ngIf="win">
+        <p>You Win!</p>
+      </div>
+    </div>
+
+  </div>
+</div>

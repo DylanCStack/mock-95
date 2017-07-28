@@ -7,14 +7,13 @@
 
   border:3px dashed rgba(60, 60, 60, 0.3);
 }
-
 .icon .image{
   padding:0px;
   margin:0px;
   width:50px;
   height:50px;
 
-  background-image: url("http://images.cdn3.stockunlimited.net/clipart/opened-notebook-icon_1950349.jpg");
+  background-image: url("https://image.freepik.com/free-icon/exe-file_318-10079.jpg");
   background-position: center;
-  background-size: 150% 150%;
+  background-size: 100% 100%;
 }

@@ -1,0 +1,134 @@
+.game {
+  padding: 0px;
+  width:600px;
+  height:400px;
+  border: 3px outset #808080;
+  background-color: #c0c0c0;
+  align-items: center;
+}
+h3 {
+  margin:0px;
+  padding:0px;
+  float:left;
+}
+.header button{
+  float:right;
+  text-align: center;
+  margin-right: 2px;
+  height:22px;
+  width: 22px;
+}
+.text{
+  float:right;
+  width: 50%;
+}
+textarea {
+  resize: none;
+  width:97%;
+  height:81%;
+}
+.header {
+  overflow: auto;
+  overflow:hidden;
+  background-color: #000080;
+  color: white;
+  height:20px;
+  width:99%;
+  padding:2px;
+}
+#options{
+  margin-left:20px;
+}
+.scores{
+  margin-left:20px;
+}
+
+table{
+  float:left;
+  border: 1px solid lightgrey;
+  margin:0px;
+  margin-left: 20px;
+  padding:0px;
+}
+
+tr {
+  border: 1px solid grey;
+  height:12px;
+  min-height:12px;
+  margin:0px;
+  padding:0px;
+}
+
+td {
+  border: 1px solid black;
+  width:20px;
+  height:20px;
+  min-width:20px;
+  min-height:20px;
+  margin:0px;
+  padding:0px;
+}
+
+.grey {
+  background-image: url("http://www.freeminesweeper.org/images/blank.gif");
+  background-size: 100% 100%;
+}
+
+.bomb {
+  background-image: url("http://www.freeminesweeper.org/images/bombrevealed.gif");
+  background-size: 100% 100%;
+}
+
+.question {
+  background-image: url("http://www.freeminesweeper.org/images/bombquestion.gif");
+  background-size: 100% 100%;
+}
+
+.marked {
+  background-image: url("http://www.freeminesweeper.org/images/bombflagged.gif");
+  background-size: 100% 100%;
+}
+
+.one {
+  background-image: url("http://www.freeminesweeper.org/images/open1.gif");
+  background-size: 100% 100%;
+}
+
+.two {
+  background-image: url("http://www.freeminesweeper.org/images/open2.gif");
+  background-size: 100% 100%;
+}
+
+.three {
+  background-image: url("http://www.freeminesweeper.org/images/open3.gif");
+  background-size: 100% 100%;
+}
+
+.four {
+  background-image: url("http://www.freeminesweeper.org/images/open4.gif");
+  background-size: 100% 100%;
+}
+
+.five {
+  background-image: url("http://www.freeminesweeper.org/images/open5.gif");
+  background-size: 100% 100%;
+}
+
+.six {
+  background-image: url("http://www.freeminesweeper.org/images/open6.gif");
+  background-size: 100% 100%;
+}
+
+.seven {
+  background-image: url("http://www.freeminesweeper.org/images/open7.gif");
+  background-size: 100% 100%;
+}
+
+.eight {
+  background-image: url("http://www.freeminesweeper.org/images/open8.gif");
+  background-size: 100% 100%;
+}
+
+.notOver {
+  display: none;
+}

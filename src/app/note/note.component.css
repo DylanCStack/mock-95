@@ -1,4 +1,33 @@
 .note {
-  padding: 10px;
-  border: 1px solid black;
+  padding: 0px;
+  width:50%;
+  height:30%;
+  border: 3px outset #808080;
+  background-color: #c0c0c0;
+}
+h3 {
+  margin:0px;
+  padding:0px;
+  float:left;
+}
+button{
+  float:right;
+  text-align: center;
+  margin-right: 2px;
+  height:22px;
+  width: 22px;
+}
+textarea {
+  resize: none;
+  width:97%;
+  height:81%;
+}
+.header {
+  overflow: auto;
+  overflow:hidden;
+  background-color: #000080;
+  color: white;
+  height:20px;
+  width:99%;
+  padding:2px;
 }

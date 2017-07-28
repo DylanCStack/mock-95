@@ -1,4 +1,20 @@
-<div class="note">
-  <h3>untitled document</h3>
-  <textarea>This is the beginning of a note</textarea>
+<div class="note" [ngStyle]="getStyle()" >
+  <div class="header"
+    (mousedown)="canMove(true, $event)"
+    (mouseup)="canMove(false, $event)"
+    (mousemove)="move($event)"
+  >
+    <h3>{{localdata.filename}}</h3>
+    <button (click)="closeApp()">X</button>
+    <button (click)="minimizeApp()"><sup>__</sup></button>
+  </div>
+    <menubar (newInstance)="newInstance()"
+      (openFile)="openFile()"
+      (saveInstance)="saveInstance()"
+      (saveNewInstance)="saveNewInstance()"
+      (closeApp)="closeApp()"
+      (deleteFile)="deleteFile()">Menubar unavaliable...
+    </menubar>
+
+  <textarea [(ngModel)]="localdata.bodytext"></textarea>
 </div>
